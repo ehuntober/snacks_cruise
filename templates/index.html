@@ -1,0 +1,29 @@
+
+
+{% extends 'base.html' %}
+
+{% block content %}
+	<div class="main">
+	<h1> Snacks cruise</h1>
+
+	<div class="content">
+
+	
+	<table id="snackies">
+		<th> Name </th>
+		<th colspan="3"> kind </th>
+
+		{% for snack in data_snack %}
+      <tr>
+      	<td> {{ snack.name }}</td>
+      	<td> {{ snack.kind }}</td>
+      	<td> <a href="{{url_for('show',id=snack.id)}}"> Detail </a> </td>
+      <td> <a href="{{url_for('edit',id=snack.id)}}"> Edit </a> </td>
+
+	 </tr>
+
+	 	{% endfor %}
+
+	 	<p> Add new Snacks to the list <a href="{{url_for('new')}}">  here </a> </p>
+
+{% endblock %}

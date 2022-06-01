@@ -1,0 +1,72 @@
+
+
+body{
+	background: seashell;
+}
+
+.main{
+	/*background: goldenrod;*/
+	width: 50%;
+	margin: auto;
+	padding: 2%;
+
+}
+.content: {
+		padding: 5%;
+}
+
+
+#snackies {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+#snackies td, #snackies th {
+  /*border: 1px solid #ddd;*/
+  padding: 8px;
+}
+
+#snackies tr:nth-child(even){background-color: #f2f2f2;}
+
+#snackies tr:hover {background-color: #ddd;}
+
+#snackies th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #04AA6D;
+  color: white;
+}
+
+.main h1{
+	text-align: center;
+	font-size: 40px;
+}
+
+input[type="text"]{
+	/*background-color: red;*/
+	width: 30%;
+	height: 20px;
+	border-radius: 5px;
+	outline: none;
+}
+
+input[type="submit"]{
+	width: 15%;
+	border: none;
+	background-color: pink;
+	font-size: 14px;
+	height: 20px;
+	border-radius: 5px;
+
+}
+
+a{
+	text-decoration: none;
+}
+
+
+a:hover{
+	cursor: pointer;
+}
